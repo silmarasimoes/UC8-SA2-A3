@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: left;
+    flex-wrap: wrap;
+    background-color: white;
+    color: black;
+    position:relative;
+}
+
+.menu {
+    display: block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 30px;
+    position: absolute;
+    left: 250px;
+    padding: 25;
+    width: 80%
+}
+
+.menu  h1 {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.menu li {
+    margin-left: 10px;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+}
+
+.menu-pesquisa {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: gainsboro;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.flex div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.grid-image{
+    display: block;
+    width: 450px;
+    height: 300px;
+}
+
+#logo {
+    display: block;
+    max-width: 450px;
+    max-height: 300px;
+}
+
+.rodape h2{
+    text-align: center;
+    padding-top: 30px;
+    text-transform: capitalize;
+    font-size: 10px;
+}
+
+.rodape p {
+    text-align: center;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+    font-size: 10px;
+}
+
+.titulo-fotos {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    max-width: 780px;
+    /* margin: 0 auto; */
+    margin-left: 70px;
+    grid-gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.grid > div:nth-child(n + 1){
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.anuncio {
+    grid-column: 1;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+.grid .anuncio h2{
+    background-color: rgb(221,217,206);
+    justify-content: space-between;
+    color: black;
+    padding-top: 250px;
+    text-transform: uppercase;
+
+}
+
+.grid .anuncio p{
+    background-color: rgb(221,217,206);
+    justify-content: space-between;
+    display: block;
+    flex-wrap: wrap;
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding-top: 350px;
+    padding-right: 5px;
+    color: teal;
+    
+}
